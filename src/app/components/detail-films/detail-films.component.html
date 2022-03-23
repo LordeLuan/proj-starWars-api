@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<!-- Content -->
+
+<div class="container text-center my-5 p-3">
+  <div style="background-color: #f4f3ee;" class="card p-3">
+    <h2>Informações do Filme</h2>
+    <hr>
+    <div class="row mt-3">
+      <h6 for="nameFilme">Nome dos personages do Filme:</h6>
+      <div *ngFor="let personagem of people" class="col-lg-4">
+            <p class="">{{personagem.name}}</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+      <h6 for="nameFilme">Planetas apresentados no Filme:</h6>
+      <div *ngFor="let planet of planets" class="col-lg-4">
+            <p class="">{{planet.name}}</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+      <h6 for="nameFilme">Espaçonaves apresentados no Filme:</h6>
+      <div *ngFor="let starship of starships" class="col-lg-4">
+            <p class="">{{starship.name}}</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>

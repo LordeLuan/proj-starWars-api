@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="container text-center my-5 p-3">
+  <div style="background-color: #f4f3ee;" class="card p-3">
+    <h3>Digite o número do filme que deseja saber:</h3>
+    <input style="width: 40vw; margin-left: 300px;" type="text" (change)="getFilmsSW($event)">
+    <hr>
+    <h4>Informações do Filme</h4>
+    <div class="row mt-3">
+      <p for="nameFilme" class="col-2">Nome:</p>
+      <span class="col-10">{{filme.title}}</span>
+      <div class="row">
+        <p for="nameFilme" class="col-2">Diretor:</p>
+        <span class="col-10">{{filme.director}}</span>
+      </div>
+    </div>
+    <div class="row">
+      <p for="nameFilme" class="col-2">Data de produção:</p>
+      <span class="col-10">{{filme.release_date}}</span>
+    </div>
+    <div class="row my-3">
+      <p class="col-2 ">Sinopse:</p>
+      <span class="col-10">{{filme.opening_crawl}}</span>
+    </div>
+    <div class="text-center">
+      <a routerLink="/films/{{filme.idFilme}}" style="width: 8rem;" class="card-link btn btn-dark">+ Detalhes</a>
+    </div>
+  </div>
+  </div>
+
+
+<app-footer></app-footer>
